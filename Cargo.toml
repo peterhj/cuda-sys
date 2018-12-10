@@ -15,6 +15,7 @@ readme        = "README.md"
 categories    = []
 
 [features]
+default       = ["cuda_8_0"]
 cuda_6_5      = []
 cuda_7_0      = ["gte_cuda_7_0"]
 cuda_7_5      = ["gte_cuda_7_0", "gte_cuda_7_5"]
@@ -30,3 +31,6 @@ gte_cuda_9_0  = []
 gte_cuda_9_1  = []
 gte_cuda_9_2  = []
 gte_cuda_10_0 = []
+
+[dependencies]
+static_assertions = "0.3.1"
